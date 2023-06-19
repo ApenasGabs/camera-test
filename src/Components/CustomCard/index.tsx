@@ -1,4 +1,5 @@
-import { Card, Button } from "antd";
+import { Button, Card } from "antd";
+import { useTranslation } from "react-i18next";
 
 // https://www.webdevdrops.com/como-acessar-camera-com-javascript/
 const { Meta } = Card;
@@ -13,6 +14,7 @@ const videoStreamTest = async () => {
 };
 console.log("videoStream: ", videoStreamTest);
 const CustomCard = (props: { img: string }) => {
+  const { t } = useTranslation();
   const { img } = props;
   const constraints = {
     audio: true,
@@ -26,7 +28,7 @@ const CustomCard = (props: { img: string }) => {
       cover={<img alt="example" src={img} className="App-logo" />}
     >
       <Button title="Tem suporte" type="primary">
-        tem suporte
+        {t("has_support")}
       </Button>
     </Card>
   ) : (
