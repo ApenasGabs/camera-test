@@ -8,17 +8,16 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    backend: {
-      loadPath: "./locales/{{ns}}/translation.json",
-    },
+    // backend: {
+    //   // loadPath: "../public/assets/i18n/{{lng}}.json",
+    //   loadPath: "./translate/{{lng}}.json",
+    // },
     fallBackLng: "en",
-    debug: false,
-    ns: ["locales"],
+    debug: true,
+    // ns: "common",
     interpolation: {
       spaceValue: false,
-      fomatSeparator: ",",
-    },
-    react: {
-      wait: true,
     },
   });
+
+export default i18n;

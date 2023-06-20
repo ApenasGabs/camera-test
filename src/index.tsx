@@ -9,13 +9,13 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-// /* </I18nextProvider> */
-// /* <I18nextProvider i18n={i18n}> */
 
 root.render(
+  // /* </I18nextProvider> */
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  // /* <I18nextProvider i18n={i18n}> */
 );
 
 // If you want to start measuring performance in your app, pass a function
