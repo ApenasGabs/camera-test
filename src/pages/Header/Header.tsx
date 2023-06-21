@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { t } = useTranslation();
-  // const { t } = useTranslation(["common"]);
 
   return (
     <>

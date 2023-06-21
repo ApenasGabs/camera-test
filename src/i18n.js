@@ -8,13 +8,8 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    // backend: {
-    //   // loadPath: "../public/assets/i18n/{{lng}}.json",
-    //   loadPath: "./translate/{{lng}}.json",
-    // },
     fallBackLng: "en",
     debug: true,
-    // ns: "common",
     interpolation: {
       spaceValue: false,
     },
