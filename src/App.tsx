@@ -3,7 +3,7 @@ import "./App.css";
 import CustomCard from "./Components/CustomCard";
 import logo from "./logo.svg";
 import Header from "./pages/Header/Header";
-import Home from "./pages/home/home";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
