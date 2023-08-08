@@ -4,7 +4,7 @@ import CustomCard from "./Components/CustomCard";
 import logo from "./logo.svg";
 import Header from "./pages/Header/Header";
 import Home from "./pages/home/home";
-import CameraAccess from "./Components/CameraAcess/CameraAcess";
+import CameraAccess from "./Components/CameraAcess/ImageCapture";
 
 function App() {
   return (
